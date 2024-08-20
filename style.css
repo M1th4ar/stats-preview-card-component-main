@@ -114,6 +114,7 @@ body {
   color: var(--Slightly-transparent-white-stat-headings);
   font-family: "Lexend Deca";
   font-family: 400;
+  padding-right: 2.5rem;
 }
 
 .attribution {
