@@ -46,45 +46,84 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.25rem;
-  margin: 1.25rem;
   height: 100vh;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .container {
   background: var(--Dark-desaturated-blue-card-backgroun);
   display: flex;
   flex-direction: row-reverse;
+  gap: 2rem;
   /* padding: 2.5rem; */
+  border-radius: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .container img {
   max-width: 100%;
   height: 100%;
-
+  filter: invert(15%) sepia(10%) saturate(2000%) hue-rotate(239deg)
+    brightness(70%) contrast(100%);
+  border-radius: 0 1.25rem 1.25rem 0;
 }
 
-.content{
-    display: flex;
-    flex-direction: column;
-    justify-self: flex-start;
-    padding: 2.5rem;
-    /* color: var(--Soft-violet-accent); */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  width: 550px;
+  padding: 4rem;
+  /* color: var(--Soft-violet-accent); */
 }
 
-.top-content h1{
-    font-family: "Inter";
-    font-weight: 700;
-    color: var(--White-main-heading-stats);
+.top-content h1 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--White-main-heading-stats);
+  margin-bottom: 1.25rem;
 }
-.top-content span{
-    color: var(--Soft-violet-accent);
+
+.top-content span {
+  color: var(--Soft-violet-accent);
+  font-family: "Inter";
+  font-weight: 400;
 }
+
+.mid-content p {
+  color: var(--Slightly-transparent-white-main-paragraph);
+  font-family: "Inter";
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 5rem;
+  padding: 0 1rem 0 0;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+}
+.data h2 {
+  color: var(--White-main-heading-stats);
+  font-family: "Inter";
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.data p {
+  color: var(--Slightly-transparent-white-stat-headings);
+  font-family: "Lexend Deca";
+  font-family: 400;
+}
+
 .attribution {
-  font-size: 11px;
+  font-size: 15px;
   text-align: center;
+  color: var(--Slightly-transparent-white-stat-headings);
+  background: var(--Dark-desaturated-blue-card-backgroun);
+  border-radius: 1.25rem;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Soft-violet-accent);
+  text-decoration: none;
 }
